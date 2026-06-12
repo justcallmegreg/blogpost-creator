@@ -61,7 +61,56 @@ your best judgement, choose sensible defaults and proceed.
 
 ## Phase 3 — Write the post
 
-<!-- filled in Task 4 and Task 5 -->
+### Where to write
+
+Write the post to `./blog/YYYY-MM-DD-<title-as-slug>.md`.
+
+- Create the `./blog/` directory if it does not exist.
+- `YYYY-MM-DD` is today's date.
+- `<title-as-slug>` is the post title, lowercased, with non-alphanumeric runs
+  replaced by single hyphens and leading/trailing hyphens removed.
+- If that filename already exists, append `-2`, then `-3`, and so on.
+
+### File template
+
+Produce exactly this structure. Omit the two adoption sections if the user said
+they do not apply.
+
+```markdown
+---
+title: "<Title>"
+date: <YYYY-MM-DD>
+reading_time: "<N> min"
+audience: "<audience scope>"
+tags: [<derived tags>]
+---
+
+# <Title>
+
+*<N> min read · For <audience scope>*
+
+## Problem Statement
+
+## Solution
+
+## Considerations Behind the Solution
+
+## Conclusions
+
+## Why Should You Adopt It?
+
+## How Should You Adopt It?
+```
+
+### Reading time
+
+After drafting, count the words in the body and set `<N> = round(word_count /
+200)` minutes. Use the same value in the frontmatter `reading_time` and the
+visible header line.
+
+### Writing rules
+
+<!-- filled in Task 5 -->
 
 ## Phase 4 — Report
 
