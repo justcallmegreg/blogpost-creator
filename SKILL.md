@@ -102,6 +102,7 @@ they do not apply.
 ```markdown
 ---
 title: "<Title>"
+subtitle: "<One or two sentences summarizing the post.>"
 date: <YYYY-MM-DD>
 reading_time: "<N> min"
 audience: "<audience scope>"
@@ -109,6 +110,8 @@ tags: [<derived tags>]
 ---
 
 # <Title>
+
+*<One or two sentences summarizing the post.>*
 
 *<N> min read · For <audience scope>*
 
@@ -149,6 +152,10 @@ Apply these while drafting:
   Do not invent features, results, or history.
 - **No emojis.** The blog post never uses emojis. (Emojis are allowed only in the
   social and chat artifacts written in Phase 5.)
+- **Subtitle.** Write a subtitle of **at most two sentences** that plainly
+  summarizes what the post is about. It is a factual summary, not a second
+  headline — the catchy-title rules do not apply. Use the same text in the
+  frontmatter `subtitle` field and the visible italic line under the title.
 
 ### Section guidance
 
