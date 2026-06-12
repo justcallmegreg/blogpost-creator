@@ -60,7 +60,29 @@ user can simply confirm. Cover all of these in one message:
 Wait for the user's answers before writing. If the user explicitly says to use
 your best judgement, choose sensible defaults and proceed.
 
-## Phase 3 — Write the post
+## Phase 3 — Craft the title
+
+The title is the most important element. The same title is reused, identically,
+across all three artifacts (post, social, chat), so craft it deliberately.
+
+Propose **2–3 candidate titles** and ask the user to pick or edit one. Do not
+proceed until a title is chosen. If the user supplies their own, use it verbatim
+(still apply the rules below, especially "no emojis").
+
+Title rules:
+
+- **Surprising and specific.** A statement or a question that names a
+  **problem / pain point** and promises a **single, simple solution**.
+- **Frame success, not failure.** Prefer "How we fixed slow API calls" over "We
+  struggled with API calls". People are drawn to success stories.
+- **Truthful, not clickbait.** The title must be a promise the post actually
+  delivers. Make it compelling, but never overpromise beyond what the content
+  supports — an over-hyped title destroys credibility with a technical audience.
+- **No emojis in the title.** The same title is reused on the blog post, which
+  forbids emojis. Emojis belong only in the social and chat bodies, never the
+  title.
+
+## Phase 4 — Write the post
 
 ### Where to write
 
