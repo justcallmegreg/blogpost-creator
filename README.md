@@ -18,7 +18,8 @@ When invoked inside a repository, the skill:
 6. Reports the three output paths, the title, reading time, word count, angle,
    and audience.
 
-The post follows: Problem Statement → Solution → Considerations Behind the
+The post opens with a subtitle that summarizes it in one or two sentences, then
+follows: Problem Statement → Solution → Considerations Behind the
 Solution → Conclusions → (optional) Why / How Should You Adopt It?
 
 The blog post never uses emojis; the social and chat posts may use a few tasteful
