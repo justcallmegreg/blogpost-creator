@@ -31,6 +31,11 @@ the gap rather than inventing content.
    `package.json`, `pyproject.toml`, `go.mod`, `Cargo.toml`), the top-level
    directory structure, and a few key modules. Aim to answer: what is this
    project, and what problem does it solve?
+4. **Repository URL.** Run `git remote get-url origin`. If it returns a URL,
+   normalize it to a browsable HTTPS form for later use: convert
+   `git@host:user/repo.git` to `https://host/user/repo`, and strip any trailing
+   `.git`. If the command fails or returns nothing, there is no repository URL —
+   note that and move on.
 
 Then form a short internal understanding (do not show it as a wall of text):
 
