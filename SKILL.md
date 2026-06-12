@@ -31,6 +31,11 @@ the gap rather than inventing content.
    `package.json`, `pyproject.toml`, `go.mod`, `Cargo.toml`), the top-level
    directory structure, and a few key modules. Aim to answer: what is this
    project, and what problem does it solve?
+4. **Repository URL.** Run `git remote get-url origin`. If it returns a URL,
+   normalize it to a browsable HTTPS form for later use: convert
+   `git@host:user/repo.git` to `https://host/user/repo`, and strip any trailing
+   `.git`. If the command fails or returns nothing, there is no repository URL —
+   note that and move on.
 
 Then form a short internal understanding (do not show it as a wall of text):
 
@@ -56,6 +61,9 @@ user can simply confirm. Cover all of these in one message:
    practice a reader could adopt, and should be omitted otherwise.
 5. **Length target.** Confirm the target. Default: Medium, 5–8 minutes
    (~1000–1600 words). The user may choose shorter or longer.
+6. **Repository URL — only if one was found in Phase 1.** Ask whether to add the
+   repository URL (`<url>`) to the posts. If Phase 1 found no `origin` URL, omit
+   this question entirely.
 
 Wait for the user's answers before writing. If the user explicitly says to use
 your best judgement, choose sensible defaults and proceed.
@@ -128,6 +136,16 @@ tags: [<derived tags>]
 ## How Should You Adopt It?
 ```
 
+### Repository link — only if the user opted in
+
+If the user agreed in Phase 2 to add the repository URL:
+
+- Add a `repository: <url>` line to the YAML frontmatter, immediately after the
+  `tags` line.
+- Add a visible footer as the **last line** of the post: `Source: <url>`.
+
+If the user declined, or no `origin` URL was found, add neither.
+
 ### Reading time
 
 After drafting, count the words in the body and set `<N> = round(word_count /
@@ -175,6 +193,12 @@ post's date and slug. If the post's filename took a collision suffix (`-2`, `-3`
 reuse the title chosen in Phase 3 and link to the post with the literal
 placeholder `{{POST_URL}}` — do not ask the user for a URL; they replace the
 placeholder at publish time.
+
+If the user opted in to the repository URL in Phase 2, also add it as a visible
+line in **both** promo files, on its own line after the call to action: in the
+social post write `Repo: <url>`; in the chat message use a casual equivalent such
+as `Code's here: <url>`. If the user declined, add no repository line. This
+repository link is separate from the `{{POST_URL}}` article link; both may appear.
 
 ### Social media post — `./blog/YYYY-MM-DD-<slug>.social.md`
 

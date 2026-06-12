@@ -26,6 +26,10 @@ The blog post never uses emojis; the social and chat posts may use a few tastefu
 ones. Both promo posts link to the article with a `{{POST_URL}}` placeholder that
 you replace at publish time.
 
+If the repository has an `origin` remote, the skill offers to add its URL (as a
+browsable HTTPS link) to all three artifacts — a `repository` field plus a
+`Source:` footer in the post, and a repo link in each promo post.
+
 ## Install
 
 Symlink (or copy) this repo into your Claude skills directory so the skill is
