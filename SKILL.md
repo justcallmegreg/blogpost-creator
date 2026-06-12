@@ -110,7 +110,30 @@ visible header line.
 
 ### Writing rules
 
-<!-- filled in Task 5 -->
+Apply these while drafting:
+
+- **Simple English.** Short sentences. Plain words. Minimal jargon — when a term
+  is unavoidable, define it briefly the first time.
+- **Fact-focused, not opinionated.** Describe what was done and why it worked.
+  Avoid praise words and personal opinion ("I think", "amazing", "you should
+  love"). The adoption sections may be mildly persuasive but must stay grounded
+  in facts.
+- **Lead with the learning.** The Problem Statement names the struggle. The rest
+  shows how it was solved and what the reader will be able to do afterward.
+- **Respect the length target.** Trim ruthlessly to stay within the agreed
+  reading time.
+- **Ground every claim** in what the repo actually shows (docs, commits, code).
+  Do not invent features, results, or history.
+
+### Section guidance
+
+- **Problem Statement** — the struggle, and who hits it.
+- **Solution** — what was built/done to solve it; concrete and specific.
+- **Considerations Behind the Solution** — the trade-offs and reasoning; why this
+  approach over alternatives.
+- **Conclusions** — what the reader now knows / can do.
+- **Why Should You Adopt It?** (optional) — factual benefits.
+- **How Should You Adopt It?** (optional) — concrete first steps.
 
 ## Phase 4 — Report
 
