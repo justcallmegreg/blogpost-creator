@@ -194,6 +194,12 @@ reuse the title chosen in Phase 3 and link to the post with the literal
 placeholder `{{POST_URL}}` — do not ask the user for a URL; they replace the
 placeholder at publish time.
 
+If the user opted in to the repository URL in Phase 2, also add it as a visible
+line in **both** promo files, on its own line after the call to action: in the
+social post write `Repo: <url>`; in the chat message use a casual equivalent such
+as `Code's here: <url>`. If the user declined, add no repository line. This
+repository link is separate from the `{{POST_URL}}` article link; both may appear.
+
 ### Social media post — `./blog/YYYY-MM-DD-<slug>.social.md`
 
 For a professional, external audience where appearances matter. Write it in this
