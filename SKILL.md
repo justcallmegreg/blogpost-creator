@@ -160,7 +160,38 @@ Apply these while drafting:
 - **Why Should You Adopt It?** (optional) — factual benefits.
 - **How Should You Adopt It?** (optional) — concrete first steps.
 
-## Phase 4 — Report
+## Phase 5 — Write the promotional artifacts
+
+After the blog post file is written, create two sibling files that share the
+post's date and slug. Both reuse the title chosen in Phase 3 and link to the post
+with the literal placeholder `{{POST_URL}}` — do not ask the user for a URL; they
+replace the placeholder at publish time.
+
+### Social media post — `./blog/YYYY-MM-DD-<slug>.social.md`
+
+For a professional, external audience where appearances matter. Write it in this
+order:
+
+1. The title (same string as the post).
+2. **One or two sentences that lead with the problem statement** — the hook.
+3. A short, **factual announcement and summary** of what the post covers.
+4. One line on **what the reader gains** (the benefit).
+5. A call to action: `Read it here → {{POST_URL}}`
+
+Tone: factual and professional. Emojis are allowed but must be **tasteful —
+1–3, functional not decorative**.
+
+### Chat message — `./blog/YYYY-MM-DD-<slug>.chat.md`
+
+For a casual, internal audience. Use the same backbone (title, problem hook,
+summary, benefit, and the `{{POST_URL}}` call to action) but in a relaxed,
+internal-community voice (for example, opening with "Just shipped a write-up
+on…"). Emojis are allowed and can be a little more relaxed, but still tasteful.
+
+Write plain markdown only — no Slack-specific or platform-specific markup — so it
+pastes into any comms tool.
+
+## Phase 6 — Report
 
 After writing the file, tell the user:
 
