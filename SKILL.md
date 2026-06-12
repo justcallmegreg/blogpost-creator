@@ -102,6 +102,7 @@ they do not apply.
 ```markdown
 ---
 title: "<Title>"
+subtitle: "<One or two sentences summarizing the post.>"
 date: <YYYY-MM-DD>
 reading_time: "<N> min"
 audience: "<audience scope>"
@@ -109,6 +110,8 @@ tags: [<derived tags>]
 ---
 
 # <Title>
+
+*<One or two sentences summarizing the post.>*
 
 *<N> min read · For <audience scope>*
 
