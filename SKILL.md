@@ -61,6 +61,9 @@ user can simply confirm. Cover all of these in one message:
    practice a reader could adopt, and should be omitted otherwise.
 5. **Length target.** Confirm the target. Default: Medium, 5–8 minutes
    (~1000–1600 words). The user may choose shorter or longer.
+6. **Repository URL — only if one was found in Phase 1.** Ask whether to add the
+   repository URL (`<url>`) to the posts. If Phase 1 found no `origin` URL, omit
+   this question entirely.
 
 Wait for the user's answers before writing. If the user explicitly says to use
 your best judgement, choose sensible defaults and proceed.
