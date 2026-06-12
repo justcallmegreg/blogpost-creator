@@ -1,16 +1,17 @@
 ---
 name: blogpost-creator
-description: Use when the user wants to generate a blog post from a code repository — investigates ./docs, ./notes, git commit history and the codebase, asks a focused round of questions, then writes a short, fact-based, easy-to-read markdown post about what a reader will learn.
+description: Use when the user wants to generate a blog post from a code repository — investigates ./docs, ./notes, git commit history and the codebase, asks a focused round of questions, crafts a catchy title, then writes a short, fact-based markdown post plus matching social media and chat promo posts.
 ---
 
 # Blogpost Creator
 
 Turn the current repository into a short, fact-based, easy-to-read blog post. The
 post centers on what a reader will learn: the struggle the project faced and how
-it was solved.
+it was solved. After finalizing the post, the skill also produces two matching
+promotional artifacts: a social media post and a chat message.
 
-Run the four phases below in order. Do not skip Phase 2 (questions) unless the
-user explicitly tells you to use your best judgement.
+Run the six phases below in order. Do not skip Phase 2 (questions) or Phase 3
+(title selection) unless the user explicitly tells you to use your best judgement.
 
 ## Phase 1 — Investigate
 
