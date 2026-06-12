@@ -40,7 +40,24 @@ Then form a short internal understanding (do not show it as a wall of text):
 
 ## Phase 2 — Ask one round of questions
 
-<!-- filled in Task 3 -->
+Present your understanding from Phase 1 in a few short bullets, then ask a single
+consolidated round of questions. Pre-fill answers from your investigation so the
+user can simply confirm. Cover all of these in one message:
+
+1. **Focus / angle.** Offer the 2–3 candidate angles you found and ask which to
+   pursue (or let the user supply their own).
+2. **Audience scope.** Who is this for? (e.g. beginners, practitioners, a
+   specific stack.) Propose a default based on the project.
+3. **Struggle / what you'll learn.** State the struggle you will center on,
+   pre-filled from investigation; ask the user to confirm or edit.
+4. **Adoption sections.** Ask whether the optional "Why should you adopt it?" and
+   "How should you adopt it?" sections apply — they fit posts about a tool or
+   practice a reader could adopt, and should be omitted otherwise.
+5. **Length target.** Confirm the target. Default: Medium, 5–8 minutes
+   (~1000–1600 words). The user may choose shorter or longer.
+
+Wait for the user's answers before writing. If the user explicitly says to use
+your best judgement, choose sensible defaults and proceed.
 
 ## Phase 3 — Write the post
 
