@@ -10,12 +10,20 @@ When invoked inside a repository, the skill:
 1. Investigates `./docs`, `./notes`, the git commit history, and the codebase.
 2. Asks one focused round of questions (angle, audience, the struggle to center
    on, whether to include adoption sections, and length).
-3. Writes a structured markdown post to `./blog/YYYY-MM-DD-<title-as-slug>.md`
+3. Proposes 2–3 catchy titles and lets you pick or edit one.
+4. Writes a structured markdown post to `./blog/YYYY-MM-DD-<title-as-slug>.md`
    with YAML frontmatter and a visible reading-time / audience header.
-4. Reports the output path, reading time, word count, angle, and audience.
+5. Writes two matching promotional artifacts beside it — a social media post
+   (`.social.md`) and a chat message (`.chat.md`).
+6. Reports the three output paths, the title, reading time, word count, angle,
+   and audience.
 
 The post follows: Problem Statement → Solution → Considerations Behind the
 Solution → Conclusions → (optional) Why / How Should You Adopt It?
+
+The blog post never uses emojis; the social and chat posts may use a few tasteful
+ones. Both promo posts link to the article with a `{{POST_URL}}` placeholder that
+you replace at publish time.
 
 ## Install
 
