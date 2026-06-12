@@ -136,6 +136,16 @@ tags: [<derived tags>]
 ## How Should You Adopt It?
 ```
 
+### Repository link — only if the user opted in
+
+If the user agreed in Phase 2 to add the repository URL:
+
+- Add a `repository: <url>` line to the YAML frontmatter, immediately after the
+  `tags` line.
+- Add a visible footer as the **last line** of the post: `Source: <url>`.
+
+If the user declined, or no `origin` URL was found, add neither.
+
 ### Reading time
 
 After drafting, count the words in the body and set `<N> = round(word_count /
