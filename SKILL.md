@@ -1,16 +1,17 @@
 ---
 name: blogpost-creator
-description: Use when the user wants to generate a blog post from a code repository — investigates ./docs, ./notes, git commit history and the codebase, asks a focused round of questions, then writes a short, fact-based, easy-to-read markdown post about what a reader will learn.
+description: Use when the user wants to generate a blog post from a code repository — investigates ./docs, ./notes, git commit history and the codebase, asks a focused round of questions, crafts a catchy title, then writes a short, fact-based markdown post plus matching social media and chat promo posts.
 ---
 
 # Blogpost Creator
 
 Turn the current repository into a short, fact-based, easy-to-read blog post. The
 post centers on what a reader will learn: the struggle the project faced and how
-it was solved.
+it was solved. After finalizing the post, the skill also produces two matching
+promotional artifacts: a social media post and a chat message.
 
-Run the four phases below in order. Do not skip Phase 2 (questions) unless the
-user explicitly tells you to use your best judgement.
+Run the six phases below in order. Do not skip Phase 2 (questions) or Phase 3
+(title selection) unless the user explicitly tells you to use your best judgement.
 
 ## Phase 1 — Investigate
 
@@ -59,7 +60,29 @@ user can simply confirm. Cover all of these in one message:
 Wait for the user's answers before writing. If the user explicitly says to use
 your best judgement, choose sensible defaults and proceed.
 
-## Phase 3 — Write the post
+## Phase 3 — Craft the title
+
+The title is the most important element. The same title is reused, identically,
+across all three artifacts (post, social, chat), so craft it deliberately.
+
+Propose **2–3 candidate titles** and ask the user to pick or edit one. Do not
+proceed until a title is chosen. If the user supplies their own, use it verbatim
+(still apply the rules below, especially "no emojis").
+
+Title rules:
+
+- **Surprising and specific.** A statement or a question that names a
+  **problem / pain point** and promises a **single, simple solution**.
+- **Frame success, not failure.** Prefer "How we fixed slow API calls" over "We
+  struggled with API calls". People are drawn to success stories.
+- **Truthful, not clickbait.** The title must be a promise the post actually
+  delivers. Make it compelling, but never overpromise beyond what the content
+  supports — an over-hyped title destroys credibility with a technical audience.
+- **No emojis in the title.** The same title is reused on the blog post, which
+  forbids emojis. Emojis belong only in the social and chat bodies, never the
+  title.
+
+## Phase 4 — Write the post
 
 ### Where to write
 
@@ -67,7 +90,7 @@ Write the post to `./blog/YYYY-MM-DD-<title-as-slug>.md`.
 
 - Create the `./blog/` directory if it does not exist.
 - `YYYY-MM-DD` is today's date.
-- `<title-as-slug>` is the post title, lowercased, with non-alphanumeric runs
+- `<title-as-slug>` is the chosen title (from Phase 3), lowercased, with non-alphanumeric runs
   replaced by single hyphens and leading/trailing hyphens removed.
 - If that filename already exists, append `-2`, then `-3`, and so on.
 
@@ -124,6 +147,8 @@ Apply these while drafting:
   reading time.
 - **Ground every claim** in what the repo actually shows (docs, commits, code).
   Do not invent features, results, or history.
+- **No emojis.** The blog post never uses emojis. (Emojis are allowed only in the
+  social and chat artifacts written in Phase 5.)
 
 ### Section guidance
 
@@ -135,15 +160,50 @@ Apply these while drafting:
 - **Why Should You Adopt It?** (optional) — factual benefits.
 - **How Should You Adopt It?** (optional) — concrete first steps.
 
-## Phase 4 — Report
+## Phase 5 — Write the promotional artifacts
 
-After writing the file, tell the user:
+After the blog post file is written, create two sibling files that share the
+post's date and slug. If the post's filename took a collision suffix (`-2`, `-3`,
+…), apply the same suffix to both sibling filenames so the set stays grouped. Both
+reuse the title chosen in Phase 3 and link to the post with the literal
+placeholder `{{POST_URL}}` — do not ask the user for a URL; they replace the
+placeholder at publish time.
 
-- The output path.
-- The computed reading time and word count.
+### Social media post — `./blog/YYYY-MM-DD-<slug>.social.md`
+
+For a professional, external audience where appearances matter. Write it in this
+order:
+
+1. The title (same string as the post).
+2. **One or two sentences that lead with the problem statement** — the hook.
+3. A short, **factual announcement and summary** of what the post covers.
+4. One line on **what the reader gains** (the benefit).
+5. A call to action: `Read it here → {{POST_URL}}`
+
+Tone: factual and professional. Emojis are allowed but must be **tasteful —
+1–3, functional not decorative**.
+
+### Chat message — `./blog/YYYY-MM-DD-<slug>.chat.md`
+
+For a casual, internal audience. Use the same backbone (title, problem hook,
+summary, benefit, and the `{{POST_URL}}` call to action) but in a relaxed,
+internal-community voice (for example, opening with "Just shipped a write-up
+on…"). Emojis are allowed and can be a little more relaxed, but still tasteful.
+
+Write plain markdown only — no Slack-specific or platform-specific markup — so it
+pastes into any comms tool.
+
+## Phase 6 — Report
+
+After writing all three files, tell the user:
+
+- The three output paths (post, social, chat).
+- The chosen title.
+- The computed reading time and word count of the post.
 - The chosen angle and audience scope.
 
-Offer to revise (length, tone, or focus) if they want changes.
+Offer to revise any of the three artifacts (title, length, tone, or focus) if they
+want changes.
 
 ## Edge cases
 
