@@ -90,7 +90,7 @@ Write the post to `./blog/YYYY-MM-DD-<title-as-slug>.md`.
 
 - Create the `./blog/` directory if it does not exist.
 - `YYYY-MM-DD` is today's date.
-- `<title-as-slug>` is the post title, lowercased, with non-alphanumeric runs
+- `<title-as-slug>` is the chosen title (from Phase 3), lowercased, with non-alphanumeric runs
   replaced by single hyphens and leading/trailing hyphens removed.
 - If that filename already exists, append `-2`, then `-3`, and so on.
 
@@ -147,6 +147,8 @@ Apply these while drafting:
   reading time.
 - **Ground every claim** in what the repo actually shows (docs, commits, code).
   Do not invent features, results, or history.
+- **No emojis.** The blog post never uses emojis. (Emojis are allowed only in the
+  social and chat artifacts written in Phase 5.)
 
 ### Section guidance
 
