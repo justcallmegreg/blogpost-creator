@@ -137,8 +137,19 @@ Apply these while drafting:
 
 ## Phase 4 — Report
 
-<!-- filled in Task 6 -->
+After writing the file, tell the user:
+
+- The output path.
+- The computed reading time and word count.
+- The chosen angle and audience scope.
+
+Offer to revise (length, tone, or focus) if they want changes.
 
 ## Edge cases
 
-<!-- filled in Task 6 -->
+- **No `./docs` or `./notes`.** Rely on git history and the codebase. Note that
+  evidence is thinner.
+- **Empty or shallow git history.** Say so and lean on code and docs.
+- **Not a git repository.** Skip the git step; work from docs, notes, and code.
+- **Adoption sections not applicable.** Omit both adoption sections cleanly; do
+  not leave empty headings.
