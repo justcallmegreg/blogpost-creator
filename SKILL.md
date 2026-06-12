@@ -163,9 +163,11 @@ Apply these while drafting:
 ## Phase 5 — Write the promotional artifacts
 
 After the blog post file is written, create two sibling files that share the
-post's date and slug. Both reuse the title chosen in Phase 3 and link to the post
-with the literal placeholder `{{POST_URL}}` — do not ask the user for a URL; they
-replace the placeholder at publish time.
+post's date and slug. If the post's filename took a collision suffix (`-2`, `-3`,
+…), apply the same suffix to both sibling filenames so the set stays grouped. Both
+reuse the title chosen in Phase 3 and link to the post with the literal
+placeholder `{{POST_URL}}` — do not ask the user for a URL; they replace the
+placeholder at publish time.
 
 ### Social media post — `./blog/YYYY-MM-DD-<slug>.social.md`
 
