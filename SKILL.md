@@ -193,13 +193,15 @@ pastes into any comms tool.
 
 ## Phase 6 — Report
 
-After writing the file, tell the user:
+After writing all three files, tell the user:
 
-- The output path.
-- The computed reading time and word count.
+- The three output paths (post, social, chat).
+- The chosen title.
+- The computed reading time and word count of the post.
 - The chosen angle and audience scope.
 
-Offer to revise (length, tone, or focus) if they want changes.
+Offer to revise any of the three artifacts (title, length, tone, or focus) if they
+want changes.
 
 ## Edge cases
 
