@@ -14,7 +14,29 @@ user explicitly tells you to use your best judgement.
 
 ## Phase 1 — Investigate
 
-<!-- filled in Task 2 -->
+Gather evidence before writing anything. Skip any source that is absent — note
+the gap rather than inventing content.
+
+1. **Docs and notes.** If `./docs` exists, read its key files. If `./notes`
+   exists, read it. These often state the project's intent and pain points
+   directly.
+2. **Git history (focus on commit messages).** Run:
+   - `git log --oneline -50` to scan recent work.
+   - `git log -30 --format='%h %ad %s%n%b' --date=short` for fuller messages and
+     bodies.
+   Look for recurring themes, the struggle, turning points, and fixes. If the
+   repo has little or no history, say so and rely more on docs and code.
+3. **Codebase survey.** Read the README, the package/manifest file (e.g.
+   `package.json`, `pyproject.toml`, `go.mod`, `Cargo.toml`), the top-level
+   directory structure, and a few key modules. Aim to answer: what is this
+   project, and what problem does it solve?
+
+Then form a short internal understanding (do not show it as a wall of text):
+
+- **What it is** — one or two sentences.
+- **The struggle** — the hard problem the project addressed.
+- **Candidate angles** — 2–3 possible blog post topics, each phrased as
+  "what you'll learn".
 
 ## Phase 2 — Ask one round of questions
 
