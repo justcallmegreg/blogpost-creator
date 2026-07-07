@@ -111,17 +111,12 @@ they do not apply.
 ---
 title: "<Title>"
 subtitle: "<One or two sentences summarizing the post.>"
-date: <YYYY-MM-DD>
-reading_time: "<N> min"
+date: "<YYYY-MM-DD>"
 audience: "<audience scope>"
 tags: [<derived tags>]
 ---
 
-# <Title>
-
 *<One or two sentences summarizing the post.>*
-
-*<N> min read · For <audience scope>*
 
 ## Problem Statement
 
@@ -136,6 +131,15 @@ tags: [<derived tags>]
 ## How Should You Adopt It?
 ```
 
+Template notes:
+
+- **Quote the `date`.** Write it as `date: "<YYYY-MM-DD>"`. An unquoted YAML
+  date parses as a date object, which fails a string-typed frontmatter schema and
+  can make the post silently fail to render.
+- **No `# <Title>` in the body.** The blog platform renders the title (and the
+  published date and reading time) from frontmatter, so a title heading in the
+  body would show twice. Start the body with the subtitle line.
+
 ### Repository link — only if the user opted in
 
 If the user agreed in Phase 2 to add the repository URL:
@@ -148,9 +152,9 @@ If the user declined, or no `origin` URL was found, add neither.
 
 ### Reading time
 
-After drafting, count the words in the body and set `<N> = round(word_count /
-200)` minutes. Use the same value in the frontmatter `reading_time` and the
-visible header line.
+Do not write a reading-time line into the post. The blog platform derives reading
+time from word count and displays it next to the title, so an in-body "N min read"
+line would duplicate it.
 
 ### Writing rules
 
@@ -230,7 +234,8 @@ After writing all three files, tell the user:
 
 - The three output paths (post, social, chat).
 - The chosen title.
-- The computed reading time and word count of the post.
+- The word count of the post (and its approximate reading time, for reference —
+  not embedded in the post).
 - The chosen angle and audience scope.
 
 Offer to revise any of the three artifacts (title, length, tone, or focus) if they
