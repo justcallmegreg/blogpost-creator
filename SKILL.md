@@ -195,11 +195,11 @@ Apply these while drafting:
 ## Phase 5 — Write the promotional artifacts
 
 After the blog post file is written, create two sibling files that share the
-post's date and slug. If the post's filename took a collision suffix (`-2`, `-3`,
-…), apply the same suffix to both sibling filenames so the set stays grouped. Both
-reuse the title chosen in Phase 3 and link to the post with the literal
-placeholder `{{POST_URL}}` — do not ask the user for a URL; they replace the
-placeholder at publish time.
+post's date and slug: a social media post and a chat message. If the post's
+filename took a collision suffix (`-2`, `-3`, …), apply the same suffix to both
+sibling filenames so the set stays grouped. Both reuse the title chosen in
+Phase 3 and link to the post with the literal placeholder `{{POST_URL}}` — do not
+ask the user for a URL; they replace the placeholder at publish time.
 
 If the user opted in to the repository URL in Phase 2, also add it as a visible
 line in **both** promo files, on its own line after the call to action: in the
@@ -207,29 +207,78 @@ social post write `Repo: <url>`; in the chat message use a casual equivalent suc
 as `Code's here: <url>`. If the user declined, add no repository line. This
 repository link is separate from the `{{POST_URL}}` article link; both may appear.
 
+### Shared DNA — applies to both artifacts
+
+- **Voice: factual professor-excitement.** The enthusiasm comes from the idea
+  being genuinely interesting, never from hype adjectives. Do not use praise or
+  hype words such as "amazing", "game-changer", "revolutionary", or "you'll
+  love". Excitement is carried by the framing of the puzzle, not by adjectives.
+- **Framing lens, not a template.** Cast the project as a small investigation —
+  *here was a puzzle → here's what turned out to actually work* — phrased
+  naturally. Never expose scientific-method step names (hypothesis, experiment,
+  model, validation, theory) in the text.
+- **Promise transferable understanding.** The hook and payoff must point at
+  something generalizable the reader learns ("how X actually works"), not
+  project-specific trivia.
+- **Concrete over abstract.** Open with a specific tension or detail, not a
+  generic statement.
+- **Grounding.** Reuse the Phase 3 title verbatim, link via `{{POST_URL}}`, and
+  ground every claim in what the repo/post actually shows. Do not invent results.
+
 ### Social media post — `./blog/YYYY-MM-DD-<slug>.social.md`
 
-For a professional, external audience where appearances matter. Write it in this
-order:
+For a professional, external audience where appearances matter. Length: about
+**120–200 words**, in 2–3 short paragraphs. Write it in this order:
 
-1. The title (same string as the post).
-2. **One or two sentences that lead with the problem statement** — the hook.
-3. A short, **factual announcement and summary** of what the post covers.
-4. One line on **what the reader gains** (the benefit).
-5. A call to action: `Read it here → {{POST_URL}}`
+1. **Hook — curiosity gap.** A genuine question or surprising tension the post
+   resolves; something the reader recognizes.
+2. **The turn.** The one core insight — what turned out to be true / what worked,
+   framed as a small finding.
+3. **Payoff + soft invite.** What the reader will now understand or be able to
+   do, then the call to action: `Read it here → {{POST_URL}}`.
 
-Tone: factual and professional. Emojis are allowed but must be **tasteful —
-1–3, functional not decorative**.
+Constraints:
+
+- **Emoji: 0–2, functional only.** Never clustered, never decorative.
+- **Engagement is pull, not push.** No explicit "comment below" style prompts.
+- **Hashtags:** include 2–3 targeted hashtags **only if** the user opted in to
+  hashtags in Phase 2; otherwise none. Place them on their own line at the end.
 
 ### Chat message — `./blog/YYYY-MM-DD-<slug>.chat.md`
 
-For a casual, internal audience. Use the same backbone (title, problem hook,
-summary, benefit, and the `{{POST_URL}}` call to action) but in a relaxed,
-internal-community voice (for example, opening with "Just shipped a write-up
-on…"). Emojis are allowed and can be a little more relaxed, but still tasteful.
+For a casual, internal audience. Length: about **50–90 words**, in 3–5 punchy
+lines. Write it in this order:
 
-Write plain markdown only — no Slack-specific or platform-specific markup — so it
-pastes into any comms tool.
+1. **Warm opener + compressed hook** (for example, "Just dug into something
+   neat…").
+2. **The cool bit.** The core insight in one plain line.
+3. **Invite + one light nudge.** `Read it here → {{POST_URL}}` plus a single
+   discussion prompt, such as "Ever hit this? Curious how others handle it."
+   (adapt the wording to the post — it is an example, not a fixed string).
+
+Constraints:
+
+- **Emoji: 2–4, as punctuation.** Never clustered.
+- **Engagement is pull plus the one light nudge** above — no more than one
+  discussion prompt.
+- **No hashtags** in the chat message.
+- Write plain markdown only — no Slack-specific or platform-specific markup — so
+  it pastes into any comms tool.
+
+### Accessibility finishing pass — run last, on both artifacts
+
+Before writing the two files, apply two checks to each artifact:
+
+1. **Analogy / plain restatement.** The single core concept must be expressed in
+   everyday terms — an analogy or a plain restatement — so a reader with no
+   background understands it.
+2. **Jargon strip.** Remove or plainly define any term an average reader would
+   not know. Keep at most one unavoidable domain term, defined inline in a few
+   words.
+
+**Guardrail:** this pass clarifies; it must not delete the specific insight or
+flatten the excitement. If simplifying would remove the core finding, rephrase
+rather than cut it.
 
 ## Phase 6 — Report
 
