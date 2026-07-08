@@ -64,6 +64,9 @@ user can simply confirm. Cover all of these in one message:
 6. **Repository URL — only if one was found in Phase 1.** Ask whether to add the
    repository URL (`<url>`) to the posts. If Phase 1 found no `origin` URL, omit
    this question entirely.
+7. **Hashtags.** Ask whether to add 2–3 targeted hashtags to the social media
+   post. Default: no. This applies to the social post only — the chat message
+   never uses hashtags. If the user opts out or does not answer, add none.
 
 Wait for the user's answers before writing. If the user explicitly says to use
 your best judgement, choose sensible defaults and proceed.
