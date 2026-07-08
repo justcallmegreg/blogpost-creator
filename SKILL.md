@@ -242,7 +242,9 @@ Constraints:
 - **Emoji: 0–2, functional only.** Never clustered, never decorative.
 - **Engagement is pull, not push.** No explicit "comment below" style prompts.
 - **Hashtags:** include 2–3 targeted hashtags **only if** the user opted in to
-  hashtags in Phase 2; otherwise none. Place them on their own line at the end.
+  hashtags in Phase 2; otherwise none. Place them on their own line as the very
+  last line of the post — after the call to action and, if present, after the
+  `Repo: <url>` line.
 
 ### Chat message — `./blog/YYYY-MM-DD-<slug>.chat.md`
 
