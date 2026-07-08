@@ -67,6 +67,10 @@ user can simply confirm. Cover all of these in one message:
 7. **Hashtags.** Ask whether to add 2–3 targeted hashtags to the social media
    post. Default: no. This applies to the social post only — the chat message
    never uses hashtags. If the user opts out or does not answer, add none.
+8. **Social emoji.** Ask whether the social post may use emoji. Default: no. This
+   applies to the social post only — the chat message always uses its own emoji
+   range regardless of this answer. If the user opts out or does not answer, the
+   social post uses none.
 
 Wait for the user's answers before writing. If the user explicitly says to use
 your best judgement, choose sensible defaults and proceed.
@@ -239,7 +243,9 @@ For a professional, external audience where appearances matter. Length: about
 
 Constraints:
 
-- **Emoji: 0–2, functional only.** Never clustered, never decorative.
+- **Emoji — off by default; used only if the user opted in during Phase 2.** If
+  they opted in, use **0–2, functional only** (never clustered, never
+  decorative); otherwise use none.
 - **Engagement is pull, not push.** No explicit "comment below" style prompts.
 - **Hashtags:** include 2–3 targeted hashtags **only if** the user opted in to
   hashtags in Phase 2; otherwise none. Place them on their own line as the very
